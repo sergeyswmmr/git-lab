@@ -1,6 +1,8 @@
 def find_max(numbers):
     """Возвращает максимальный элемент списка."""
-    max_value = 0
+    if not numbers:
+        return None
+    max_value = numbers[0]
     for n in numbers:
         if n > max_value:
             max_value = n
